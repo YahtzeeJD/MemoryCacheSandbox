@@ -12,7 +12,7 @@ namespace MemoryCacheSandbox
         static void Main(string[] args)
         {
             _cache = MemoryCache.Default;
-            _policy.AbsoluteExpiration = DateTimeOffset.Now.AddMinutes(1);
+            _policy.AbsoluteExpiration = DateTimeOffset.Now.AddSeconds(30);
 
             Console.WriteLine("Adding 3 items to cache");
 
